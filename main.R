@@ -10,8 +10,7 @@ lin_prob = function(vec, hash, elem){
         lin_prob(vec, hash, elem+1)
     }
     else{
-        print(elem)
-        vec = c(vec, hash(elem))
+        return(c(vec, hash(elem)))
     }
 }
 
@@ -19,6 +18,5 @@ k = c(12, 44, 13, 88, 23, 94, 11, 39, 20, 16, 5)
 h_k = c()
 
 for (i in 1:length(k)){
-    lin_prob(h_k, h, k[i])
-    #print(k[i])
+    h_k = lin_prob(h_k, h, k[i])
 }
