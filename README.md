@@ -1,2 +1,2 @@
 # hash-function
-Look no farther
+Look no further
